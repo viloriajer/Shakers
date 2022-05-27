@@ -2,9 +2,7 @@ import express, { json, urlencoded } from 'express'
 import { checkMysqlConnection, pool } from './mysql.js'
 import { logInfo } from './logger.js'
 import {ApolloServer, gql} from 'apollo-server-express'
-import { config } from 'dotenv'
 
-config()
 //    shakes: [Milkshake!]
 const typeDefs = gql`
 type Query {
